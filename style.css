@@ -104,7 +104,7 @@ footer {
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 .social-links a i {
