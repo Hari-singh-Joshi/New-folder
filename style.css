@@ -1,32 +1,41 @@
-.nav-link {
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Navbar Styling */
+.navbar-brand, .nav-link {
     color: #ffffff !important;
-     /* Replace with your desired color */
-  }
-  .nav-link:hover {
-    color: red !important; 
-    text-decoration: underline !important;/* Optional hover color */
-  }
-  .navbar-brand{
-    color:white !important;
-  }
-  .img-thumbnail{
-    
-      max-width: 70% !important;
-      height: auto !important;
-      border: none !important;
-      background-color: bisque;
-  }
- 
-.aca{
+}
+.nav-link:hover {
+    color: red !important;
+    text-decoration: underline !important;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+/* About Me Section */
+.about-me, .aca {
     background-color: bisque;
 }
-.about-me{
+.img-thumbnail {
+    max-width: 70% !important;
+    height: auto !important;
+    border: none !important;
     background-color: bisque;
 }
 
+/* Projects Section */
 .projects-section {
     padding: 70px 0;
-    
 }
 
 .projects-container {
@@ -43,6 +52,12 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: calc(50% - 20px);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
 
 .project img {
@@ -51,47 +66,36 @@
     border-radius: 8px;
 }
 
-
-
 .project .btn:hover {
     background-color: #f4c430;
     color: #333;
 }
+
+/* Contact Section */
 .contact-section {
-    padding: 60px 0 !important; /* Padding for the section */
-    background-color: #f8f9fa; /* Light background color */
+    padding: 60px 0 !important;
+    background-color: #f8f9fa;
 }
-.social-links a {
-    margin-right: 15px !important; /* Spacing between social links */
-    font-size: 1.5em; /* Larger icons */
-    color: #007bff; /* Bootstrap primary color for links */
-}
-.social-links a:hover {
-    color: #0056b3 !important; /* Darker shade on hover */
-}
+
+/* Footer Styling */
 footer {
     background-color: #ffc107;
     color: black;
     text-align: center;
-    margin:0px;  
-}
-html, body {
-    height: 100%;
     margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
 }
+
+/* Social Links */
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between each link */
+    gap: 20px;
     padding: 20px;
 }
 
 .social-links a {
-    color: #343a40; /* Dark, classic gray */
-    font-size: 18px; /* Font size for text */
+    color: #343a40;
+    font-size: 18px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -100,14 +104,14 @@ html, body {
 }
 
 .social-links a i {
-    font-size: 24px; /* Slightly larger for icons */
+    font-size: 24px;
 }
 
 .social-links a:hover {
-    color: #007bff; /* Classic blue on hover */
-    transform: translateY(-3px); /* Lift on hover */
+    color: #007bff;
+    transform: translateY(-3px);
 }
 
 .social-links a:active {
-    transform: translateY(1px); /* Minor push on click */
+    transform: translateY(1px);
 }
